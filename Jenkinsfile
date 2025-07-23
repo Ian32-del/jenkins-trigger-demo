@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ('Checkout') {
             steps {
-                git 'https://github.com/Ian32-del/jenkins-trigger-demo.git'
+                git branch: 'main', url: 'https://github.com/Ian32-del/jenkins-trigger-demo.git'
             }
         }
 
